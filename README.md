@@ -94,7 +94,7 @@ You can also build a seat for someone not on the list, or for yourself from your
 | `.claude/skills/newseat/` | The seat builder and the brain specs |
 | `.claude/agents/` | One sub-agent per seat (`seat-<key>.md`) |
 | `scripts/` | Quote checker, ledger, and source fetcher (Python standard library only) |
-| `tests/` | Tests for the scripts |
+| `tests/` | Tests for the scripts (run in CI on every push) |
 | `docs/` | Vision, architecture, roadmap |
 | `sessions/` | Your debriefs (ignored by git) |
 | `ledger/` | Your reps (ignored by git) |

@@ -4,12 +4,12 @@
 
 Goal: one real moment in, one useful rep out, every quote verified.
 
-- [ ] Council protocol: safety screen, brief, two rounds, Evidence audit, debrief
-- [ ] Roster with all seven seats and build status
-- [ ] Seat agents for all seven seats
-- [ ] Quote checker (sessions against brains, brains against sources)
-- [ ] Ledger script (add, complete, stats)
-- [ ] Source fetcher and the `/newseat` builder with brain specs
+- [x] Council protocol: safety screen, brief, two rounds, Evidence audit, debrief
+- [x] Roster with all seven seats and build status
+- [x] Seat agents for all seven seats
+- [x] Quote checker (sessions against brains, brains against sources)
+- [x] Ledger script (add, complete, stats)
+- [x] Source fetcher and the `/newseat` builder with brain specs
 - [ ] Build brains: Kukushkin, Huberman, Grant
 - [ ] Build the Evidence brain (social anxiety exposure, implementation intentions, arousal reappraisal, personality change)
 - [ ] First real debrief, saved as an example in `sessions/examples/`
