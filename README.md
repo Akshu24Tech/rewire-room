@@ -1,5 +1,7 @@
 # Rewire Room
 
+![Rewire Room Council](assets/rewire-room-hero.png)
+
 **Turn podcast insight into personality change.**
 
 You watched the Huberman episode. You read Adam Grant. You nodded along to Robert Greene. Then Monday came, you sat quietly in the meeting again, and nothing changed.

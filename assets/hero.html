@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rewire Room Hero</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    body {
+      background: #060b13;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+    .hero-container {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      height: 650px;
+      background: radial-gradient(circle at 50% 30%, #0d1e33 0%, #050a12 80%);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    /* Subtle background grid */
+    .hero-container::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+    /* Council table curve */
+    .table-curve {
+      position: absolute;
+      bottom: -180px;
+      left: -10%;
+      width: 120%;
+      height: 480px;
+      background: linear-gradient(180deg, #091726 0%, #060e19 100%);
+      border-top: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 50%;
+      box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.8), inset 0 2px 10px rgba(56, 189, 248, 0.15);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 55px;
+    }
+    /* Avatars arc area */
+    .avatars-arc {
+      position: absolute;
+      top: 100px;
+      width: 95%;
+      max-width: 1100px;
+      height: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      z-index: 1;
+      padding: 0 40px;
+    }
+    .avatar-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+    .avatar-card:hover {
+      transform: translateY(-8px);
+    }
+    .avatar-slot {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: #112236;
+      border: 2px solid rgba(56, 189, 248, 0.3);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+      position: relative;
+      overflow: hidden;
+    }
+    .avatar-slot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .seat-badge {
+      margin-top: 10px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 11px;
+      font-weight: 500;
+      color: #94a3b8;
+      white-space: nowrap;
+      letter-spacing: 0.3px;
+    }
+    /* Center console text */
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #38bdf8;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      background: #38bdf8;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #38bdf8;
+    }
+    .headline {
+      font-size: 26px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 8px;
+      letter-spacing: -0.4px;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: #94a3b8;
+      max-width: 480px;
+      text-align: center;
+      line-height: 1.5;
+      margin-bottom: 18px;
+    }
+    .command-box {
+      background: rgba(2, 6, 23, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 24px;
+      padding: 8px 24px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+      color: #38bdf8;
+      margin-bottom: 18px;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.4);
+    }
+    .btn-group {
+      display: flex;
+      gap: 12px;
+    }
+    .btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #cbd5e1;
+      padding: 7px 18px;
+      border-radius: 20px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero-container">
+    <!-- Council Avatars -->
+    <div class="avatars-arc">
+      <div class="avatar-card">
+        <div class="avatar-slot">👓</div>
+        <div class="seat-badge">Scott Galloway</div>
+      </div>
+      <div class="avatar-card" style="margin-bottom: 25px;">
+        <div class="avatar-slot">📖</div>
+        <div class="seat-badge">Robert Greene</div>
+      </div>
+      <div class="avatar-card" style="margin-bottom: 45px;">
+        <div class="avatar-slot">🧬</div>
+        <div class="seat-badge">Andrew Huberman</div>
+      </div>
+      <div class="avatar-card" style="margin-bottom: 45px;">
+        <div class="avatar-slot">⚡</div>
+        <div class="seat-badge">Sahar Yousef</div>
+      </div>
+      <div class="avatar-card" style="margin-bottom: 25px;">
+        <div class="avatar-slot">🔬</div>
+        <div class="seat-badge">Adam Grant</div>
+      </div>
+      <div class="avatar-card">
+        <div class="avatar-slot">🧠</div>
+        <div class="seat-badge">Nikolay Kukushkin</div>
+      </div>
+    </div>
+
+    <!-- Council Table Deck -->
+    <div class="table-curve">
+      <div class="status-pill">
+        <span class="status-dot"></span> THE ROOM IS OPEN
+      </div>
+      <h1 class="headline">Bring a freeze to the Rewire Room</h1>
+      <p class="subtitle">
+        In Claude Code, type the line below with what happened. The council diagnoses the broken layer and hands you one calibrated rep.
+      </p>
+      <div class="command-box">
+        /rewire debrief I stayed quiet in class ...
+      </div>
+      <div class="btn-group">
+        <button class="btn">What to debrief</button>
+        <button class="btn">View the Ledger</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
