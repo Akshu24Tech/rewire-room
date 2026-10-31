@@ -176,6 +176,25 @@ class LedgerTests(unittest.TestCase):
         lines = ledger.ledger_path().read_text().splitlines()
         self.assertEqual([json.loads(l)["event"] for l in lines], ["add", "done"])
 
+    def test_rung_is_stored_and_validated(self):
+        code, out = self.run_cli("add", "--type", "class", "--situation", "ask a question",
+                                 "--layer", "Stretch", "--rep", "Ask one question", "--before", "5", "--rung", "2")
+        self.assertEqual(code, 0)
+        self.assertIn("rung 2", out)
+        ev = json.loads(ledger.ledger_path().read_text().splitlines()[0])
+        self.assertEqual(ev["rung"], 2)
+        with self.assertRaises(SystemExit):
+            self.run_cli("add", "--type", "class", "--situation", "x", "--layer", "y",
+                         "--rep", "z", "--before", "5", "--rung", "12")
+
+    def test_stats_tolerates_rung_field(self):
+        for i in range(4):
+            self.run_cli("add", "--type", "class", "--situation", "s", "--layer", "l",
+                         "--rep", "r", "--before", str(6 - i), "--rung", str(i + 1), today=date(2026, 10, 1 + i))
+        reps = list(ledger.current_reps(ledger.read_events(ledger.ledger_path())).values())
+        s = ledger.stats(reps, date(2026, 11, 1))  # must not raise
+        self.assertEqual(s["total"], 4)
+
 
 class FetchTests(unittest.TestCase):
     def test_html_to_text_drops_scripts_and_nav(self):

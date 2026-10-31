@@ -93,8 +93,13 @@ def cmd_add(args, path: Path, today: date) -> int:
         "situation": args.situation, "layer": args.layer, "rep": args.rep,
         "before": score(args.before), "session": args.session or "",
     }
+    if args.rung is not None:
+        if not 1 <= args.rung <= 9:
+            raise SystemExit("A ladder rung is a number from 1 to 9.")
+        event["rung"] = args.rung
     append_event(path, event)
-    print(f"Logged {rid}: {args.rep}")
+    rung = f" (rung {args.rung})" if args.rung is not None else ""
+    print(f"Logged {rid}{rung}: {args.rep}")
     return 0
 
 
@@ -128,7 +133,8 @@ def cmd_list(args, path: Path, today: date) -> int:
         return 0
     for r in reps:
         after = f" -> {r['after']}" if r["status"] == "done" else ""
-        print(f"{r['id']}  {r['date']}  {r['type']:<13} {r['status']:<8} {r['before']}{after:<5}  {r['rep']}")
+        rung = f" r{r['rung']}" if r.get("rung") else ""
+        print(f"{r['id']}  {r['date']}  {r['type']:<13} {r['status']:<8} {r['before']}{after:<5}{rung}  {r['rep']}")
     return 0
 
 
@@ -213,6 +219,7 @@ def build_parser() -> argparse.ArgumentParser:
     a.add_argument("--rep", required=True)
     a.add_argument("--before", type=int, required=True, help="discomfort in the original moment, 0 to 10")
     a.add_argument("--session", help="session folder the rep came from")
+    a.add_argument("--rung", type=int, help="ladder rung this rep is, 1 (easiest) to 9, for reps mode")
 
     d = sub.add_parser("done", help="mark a rep done after the real moment")
     d.add_argument("id")

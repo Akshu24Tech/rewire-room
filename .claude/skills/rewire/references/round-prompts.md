@@ -114,3 +114,55 @@ THE QUESTION
 
 Answer in your seat's voice, first person, under 400 words: your view, the reasoning with named frameworks and source ids, one rep the user could do this week, and the question you would ask back. Do not narrate your expert in the third person. Same rules as the council: no medical advice, temperament is not a defect, verbatim quotes only. End with "Sources:" and the source ids you used.
 ```
+
+---
+
+## Prep (one round, before a moment)
+
+```
+REWIRE ROOM, PREP: ONE ROUND BEFORE THE MOMENT
+
+Repo root: [absolute path]. You hold the [SHORT] seat ([layer]). Read your brain's _hot.md, then at most two more brain files that fit.
+
+Read the brief: [session folder]/brief.md
+Your weight on this moment: [w]/3 ([one-line reason]).
+
+The moment is in the future. Help the user walk in ready, from your layer. Answer in your seat's voice, under 200 words, in exactly this shape:
+
+SEAT: [SHORT] ([layer])
+BEFORE: one thing to do in the hours or minutes before the moment, on your layer. Concrete, no medical content.
+DURING: one intention to hold while it is happening, in one sentence.
+IF-THEN: When [the moment they expect to freeze], I will [a small action].
+WATCH FOR: the one thing they should notice in the moment, so they can debrief it after.
+WHY: one line, naming your framework or principle and its source id.
+
+Rules: forward-looking only, no diagnosis of the past. One of each, not a list. No supplements, medication, or dosing. Verbatim quotes only, as "exact words" [Sxxx].
+```
+
+---
+
+## Ladder (reps mode, single seat)
+
+```
+REWIRE ROOM, CHALLENGE LADDER
+
+Repo root: [absolute path]. You hold the [SHORT] seat ([layer]). Read your brain's _hot.md, then frameworks.md and principles.md.
+
+Build a five-rung challenge ladder for this situation type: [type].
+The user's history here, from the ledger: [paste the ledger list for this type, or "none yet"].
+
+The ladder goes from an easy stretch to a hard one, each rung a single observable action the user could do in a real [type] moment. Rung 1 should feel like a 2 out of 10 in discomfort for a quiet, introverted person; rung 5 like an 8. Each rung builds on the one below.
+
+Answer in your seat's voice, under 300 words, in exactly this shape:
+
+SEAT: [SHORT] ([layer])
+LADDER for [type]:
+1. [rep] — why it is the right first stretch (framework, source id)
+2. [rep]
+3. [rep]
+4. [rep]
+5. [rep]
+HOW TO KNOW A RUNG IS DONE: one line on what tells the user they are ready to step up.
+
+Rules: every rung is observable (someone could see whether it happened) and doable in one real moment. No medical content. Introversion is not a defect; these add range, they do not fix the person. Verbatim quotes only, as "exact words" [Sxxx].
+```

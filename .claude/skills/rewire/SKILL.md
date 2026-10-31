@@ -17,9 +17,12 @@ Read once before the first run: `roster.json`, `references/seats.md`, `reference
 | `debrief <moment>` | Built | The full protocol below |
 | `ask <seat> <question>` | Built | One seat, the single-seat prompt in `round-prompts.md`. Safety screen still applies. No session folder. |
 | `board` | Built | Show the roster (seat, layer, status) and edit `"default"` or `"board"` in `roster.json` on request |
-| `reps`, `check-in`, `prep`, `decide` | Not built (see `docs/ROADMAP.md`) | Say so in one line and offer a debrief instead. For a progress question, run `python scripts/ledger.py stats` and report it. |
+| `prep <moment>` | Built | Before a hard moment: see "Prep mode" below |
+| `reps [type]` | Built | A challenge ladder for a situation type: see "Reps mode" below |
+| `check-in` | Built | Read the ledger and name one focus: see "Check-in mode" below |
+| `decide <choice>` | Not built (see `docs/ROADMAP.md`) | Say so in one line and offer a debrief or prep instead |
 
-A request with no mode that describes a moment is a debrief.
+A request with no mode that describes a past moment is a debrief. A request about a moment that has not happened yet ("I have a presentation tomorrow") is a prep.
 
 ## Seat readiness
 
@@ -91,6 +94,43 @@ python scripts/ledger.py add --type <situation type> --situation "<one line>" --
 
 1. Run `python scripts/check_quotes.py session sessions/<folder>` (try `python3` if needed). Remove any quote it flags from `debrief.md` and say so in the Chair notes. If Python is unavailable, search each quoted line in that seat's brain yourself and treat any you cannot find as unverified.
 2. Show the user the short debrief in chat, under 180 words: the primary layer and why (one line), the rep, the if-then plan, any evidence warning, the one disagreement worth knowing, and the path to `debrief.md`. End by asking them to tell you how the rep went after the next moment, so the ledger can record it (`python scripts/ledger.py done <id> --after <0-10> --note "..."`).
+
+## Prep mode
+
+For a moment that has not happened yet. Same safety screen (Step 0) and seat picking (Step 2), but one round, forward-looking, and no ledger entry until afterwards.
+
+1. **Brief.** Ask only what is missing: the moment and when it is, what the user wants to do, what usually goes wrong for them here (pull the ledger history for this type with `python scripts/ledger.py list --type <type>`), and their energy and sleep going in. Keep it under 150 words. Create `sessions/YYYY-MM-DD-prep-<slug>/` and write `brief.md`.
+2. **One round.** Spawn the picked seats in parallel with the prep prompt in `references/round-prompts.md`. Each gives one thing to do in the hours or minutes before, and one intention for during. Save to `round-1.md`.
+3. **The plan.** Write `prep.md` from `references/prep-template.md`: the one state tool for just before (from the state seat), the one intention for during (the sharpest single seat), an if-then for the moment the user expects to freeze, and what to notice so they can debrief it later. Show it in chat under 150 words.
+4. After the moment, the user runs a `debrief`. Do not log a rep at prep time; the debrief logs it, with `before` set from how the moment actually felt.
+
+## Reps mode
+
+A challenge ladder for one situation type: a progression from an easy rep to a hard one, so the user always has a next rung that is a small stretch, not a cliff.
+
+1. **Type.** Get the situation type (the tags in `references/seats.md`). If not given, ask.
+2. **History.** Run `python scripts/ledger.py list --type <type>` and `python scripts/ledger.py stats`. Note the hardest rung the user has already done for this type and how the discomfort landed.
+3. **Build the ladder from a seat, not yourself.** Spawn one single-seat consult (the stretch owner, Grant, when ready, else the readiest seat whose layer fits the type) with the ladder prompt in `references/round-prompts.md`. It returns five rungs, each a concrete rep, from a 2 out of 10 discomfort to an 8. Save the seat's answer under a `## <Short>` heading in `sessions/ladder-<type>.md` so the quote checker can run on it.
+4. **Place the user and pick the next rung.** The next rung is one step above the hardest rung they have completed at a discomfort they rated 4 or lower. If they have completed none, start at rung 1. Never jump more than one rung.
+5. **Log it** as a rep so it lands in the ledger and the debrief loop:
+
+```bash
+python scripts/ledger.py add --type <type> --situation "Rung <n>: <ladder step>" --layer "<the seat's layer>" --rep "<the rep>" --before <their predicted discomfort 0-10> --rung <n>
+```
+
+6. Show the user the full ladder (so they see where this is going), the one rung to do next, and an if-then. Tell them to report back with `done` so the next rung unlocks. Verify quotes with `python scripts/check_quotes.py session sessions` as in Step 7.
+
+## Check-in mode
+
+Read the ledger and give an honest progress read. No council.
+
+1. Run `python scripts/ledger.py stats --json`. If there are no reps, say so and offer a debrief.
+2. Report, in plain English and under 200 words:
+   - **What is getting easier**: situation types whose trend is "easier", with the numbers.
+   - **What is stuck**: types that are "flat" or "harder" despite several reps.
+   - **What you are dodging**: types with a high skip rate, and any rep open for two weeks or more (the `stale` list). Name them without blame.
+   - **One focus** for the next week: either push a stuck type (offer a `reps` ladder for it) or clear the oldest stale rep. Pick one, not a list.
+3. Never diagnose a trend as a trait. "This type is still hard" is about reps done, not about who the user is. Apply the safety screen if the user's reply turns to distress.
 
 ## Chair rules
 
