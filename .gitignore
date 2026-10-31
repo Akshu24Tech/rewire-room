@@ -1,0 +1,19 @@
+# Personal data: your debriefs and reps stay on your machine
+sessions/*
+!sessions/.gitkeep
+!sessions/examples/
+ledger/*
+!ledger/.gitkeep
+
+# Raw sources fetched by /newseat (copyrighted material, never committed)
+build/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# Local env and OS files
+.env
+.DS_Store
