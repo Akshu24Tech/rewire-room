@@ -11,13 +11,13 @@
 - **Quote:** "a lot of us spend a lot of our time thinking like preachers prosecutors or politicians" [S001, 2023]. Also "When I go into prosecutor mode, the other person brings their best defense attorney to court." [S003, 2026] and "thinking like a scientist to me means you value humility over pride and curiosity over conviction" [S015, 2021].
 - **Sources:** 5 (S001, S003, S006, S013, S015)
 
-## 2. The Discomfort Ring (Creature of Discomfort)
+## 2. Creature of Discomfort
 
 - **What it is:** The foundational learning model from *Hidden Potential*. Reaching higher capability requires deliberately seeking out and tolerating friction, awkwardness, and the feeling of incompetence rather than waiting to feel confident (S001, S002, S003, S007, S008).
 - **Parts or steps:** Recognize that the learning curve is inherently awkward. Reject the myth that high aptitude feels effortless. Set explicit targets for making mistakes and experiencing friction during practice. Treat somatic awkwardness as proof that neural and behavioral adaptation is occurring (S001, S002, S007).
 - **When to use it:** Any moment where hesitation, social awkwardness, or waiting to feel ready caused you to stay silent or avoid a necessary stretch.
 - **How to apply it to a debrief:** Seat's reasoning, not his claim (inferred from S001, S002). You interpreted social clumsiness or hesitation as evidence that you are bad at group dialogue. In reality, awkwardness is the mandatory entrance fee for expanding range. Rep: deliberately commit to one awkward contribution in tomorrow's meeting, aiming to tolerate the friction rather than deliver a polished speech.
-- **Quote:** "becoming a creature of discomfort" [S001, 2023]. Also "to go through the awkwardness and the discomfort" [S002, 2026] and "embracing things that are unpleasant or awkward" [S001, 2023].
+- **Quote:** "becoming a creature of discomfort" [S001, 2023]. Also "embracing things that are unpleasant or awkward" [S001, 2023].
 - **Sources:** 5 (S001, S002, S003, S007, S008)
 
 ## 3. Scaffolding (Temporary Structure and Exit Strategy)
@@ -35,7 +35,7 @@
 - **Parts or steps:** Step one: acknowledge the first score is fixed history; you cannot retroactively edit what happened. Step two: shift your entire evaluative focus to the second score. Step three: grade your response on curiosity, composure, and extraction of actionable lessons. Aim for a perfect grade on your second score regardless of the first score (S001, S011, S019).
 - **When to use it:** Immediately following an embarrassing stumble, a critical review, a botched question, or a perceived public failure.
 - **How to apply it to a debrief:** Seat's reasoning, not his claim (inferred from S001, S011). The freeze in standup was a poor first score. Ruminating on it in shame compounds the failure. Rep: award yourself a second score based on how quickly you analyze the moment without self-pity and extract one verifiable adaptation.
-- **Quote:** "I want to evaluate myself on how well I took the first score" [S001, 2023]. Also "all I want to do is Ace the second score which is the response to the first score" [S011, 2022] and "you're giving yourself a second score the first score was garbage and you can't change it" [S011, 2022].
+- **Quote:** "I want to evaluate myself on how well I took the first score" [S001, 2023]. Also "all I want to do is Ace the second score which is the response to the first score" [S011, 2022].
 - **Sources:** 4 (S001, S004, S011, S019)
 
 ## 5. The Challenge Network and Disagreeable Givers
@@ -44,7 +44,7 @@
 - **Parts or steps:** Identify peers who are disagreeable givers: people who may be blunt or tough on the surface, but whose fundamental motivation is generous commitment to your development. Distinguish them from agreeable takers (fawning flatterers who exploit you) and disagreeable takers (hostile critics). Solicit their direct critique on your weaknesses (S007, S011, S015).
 - **When to use it:** Overcoming blind spots, testing whether your communication actually landed, or breaking free from echo chambers of false reassurance.
 - **How to apply it to a debrief:** Seat's reasoning, not his claim (inferred from S005, S015). You assumed silence meant others judged you harshly, but you never tested it. Rep: ask a trusted, direct colleague for one piece of unvarnished feedback on how your silence in meetings looks from the outside.
-- **Quote:** "cohort of people he relies on to give him unvarnished feedback" [S005, 2019]. Also "disagreeable givers uh they're Gruff and tough on the surface uh but they're doing it because they want to help" [S007, 2024] and "the people you really want in your challenge network are the disagreeable givers" [S015, 2021].
+- **Quote:** "disagreeable givers uh they're Gruff and tough on the surface uh but they're doing it because they want to help" [S007, 2024] and "the people you really want in your challenge network are the disagreeable givers" [S015, 2021].
 - **Sources:** 4 (S005, S007, S011, S015)
 
 ## 6. Task Conflict Versus Relationship Conflict

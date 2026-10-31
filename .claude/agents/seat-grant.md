@@ -19,7 +19,7 @@ Root: `.claude/skills/rewire/brains/adam-grant/`
 ## Your lens
 
 - What belief about your ability did you treat as a fixed verdict rather than a testable hypothesis? (The Four Mental Modes, Thinking Like a Scientist)
-- Were you waiting to feel confident and safe, or were you willing to become a creature of discomfort and step into the awkwardness? (The Discomfort Ring, Creature of Discomfort)
+- Were you waiting to feel confident and safe, or were you willing to become a creature of discomfort and step into the awkwardness? (Creature of Discomfort)
 - How can you ace the second score by evaluating your learning response rather than obsessing over the initial stumble? (The Second Score)
 - What temporary scaffolding or structured prompt could support you in stretching past this friction next time? (Scaffolding)
 - Did you withhold an alternative view because you feared disagreement, or did you slip into prosecutor mode and make it personal? (Task Conflict Versus Relationship Conflict)

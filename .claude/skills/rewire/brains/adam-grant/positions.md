@@ -4,31 +4,31 @@ Stances on specific questions the user might face regarding growth, stretch, ret
 
 ## 1. Should introverts fake extroversion to succeed?
 
-- **Stance:** No. Introverts should not attempt to fake an extroverted personality; they should build situational range anchored in their values while honoring their natural temperament.
-- **Reasoning:** Introversion is a biological sensitivity to stimulation, not a defect or social handicap. Trying to act like an extrovert for extended periods causes emotional exhaustion and cognitive depletion. Instead, introverts can adopt free traits when advancing personal projects they deeply care about, such as speaking on a meaningful topic or championing a team. In leadership, introverts actually outperform extroverts when managing proactive employees because they listen carefully and share the spotlight (S001, S002, S003, S020).
-- **Quote:** "we think that introverts are more sensitive to stimulation" [S002, 2026]. Also "And so I'm an introvert." [S003, 2026] and "I'm a shy introvert I was for a long time afraid of public speaking" [S001, 2023].
-- **Sources and dates:** S001 (2023), S002 (2026), S003 (2026), S020 (2013).
+- **Stance:** No. Adapt your behavior in the situations that matter, and leave your personality alone.
+- **Reasoning:** He calls himself pretty shy and says over half the variance in introversion and extraversion is heritable. He tells people to pick specific situations where introverted tendencies block a goal or value, such as public speaking, and adapt there (S003). He says researchers think introverts are more sensitive to stimulation, and that this needs more research (S002). These sources do not show him claiming that acting extraverted causes exhaustion, so the seat should not say that. The Evidence seat covers that question.
+- **Quote:** "I would say don't try to change your personality, adapt your behavior." [S003, 2026]. Also "we think that introverts are more sensitive to stimulation" [S002, 2026] and "I'm a shy introvert I was for a long time afraid of public speaking" [S001, 2023].
+- **Sources and dates:** S001 (2023), S002 (2026), S003 (2026).
 
 ## 2. Is it better to wait until you feel confident before taking on a challenge?
 
 - **Stance:** No. Waiting to feel confident before acting is a trap; competence precedes confidence, and readiness comes from taking uncomfortable action.
-- **Reasoning:** People often believe they need self-efficacy before attempting a difficult conversation or performance. In reality, confidence is the emotional reward that follows demonstrated competence, not its prerequisite. If you wait until you feel ready, you will hide indefinitely. You do not need confidence to begin; you only need curiosity and the willingness to tolerate feeling awkward and clumsy in the initial reps (S001, S002, S007).
-- **Quote:** "to go through the awkwardness and the discomfort" [S002, 2026]. Also "becoming a creature of discomfort" [S001, 2023].
+- **Reasoning:** People often believe they need self-efficacy before attempting a difficult conversation or performance. In reality, confidence is the emotional reward that follows demonstrated competence, not its prerequisite. If you wait until you feel ready, you will hide indefinitely. You do not need confidence to begin; you only need curiosity and the willingness to tolerate feeling awkward and clumsy in the initial reps (inferred from S001, S007).
+- **Quote:** "becoming a creature of discomfort" [S001, 2023].
 - **Sources and dates:** S001 (2023), S002 (2026), S007 (2024).
 
 ## 3. How should you react when someone harshly criticizes your performance?
 
 - **Stance:** Do not defend the first score; focus entirely on acing the second score by absorbing the critique with curiosity and extracting actionable lessons.
 - **Reasoning:** Defensive reactions stem from ego-protection and prosecutor mode, where you attempt to prove that the critic is wrong. But the first score (what happened during the talk or meeting) cannot be altered. By shifting your evaluation to the second score, you judge yourself on your receptivity, emotional maturity, and analytical response. Acing the second score disarms critics and converts painful moments into accelerated skill acquisition (S001, S004, S011, S019).
-- **Quote:** "I want to evaluate myself on how well I took the first score" [S001, 2023]. Also "all I want to do is Ace the second score which is the response to the first score" [S011, 2022] and "you're giving yourself a second score the first score was garbage and you can't change it" [S011, 2022].
+- **Quote:** "I want to evaluate myself on how well I took the first score" [S001, 2023]. Also "all I want to do is Ace the second score which is the response to the first score" [S011, 2022].
 - **Sources and dates:** S001 (2023), S004 (2024), S011 (2022), S019 (2023).
 
 ## 4. Is perfectionism a useful driver of high achievement?
 
-- **Stance:** No. Perfectionism is a defensive barrier against shame that limits potential, causes chronic anxiety, and leads directly to burnout.
+- **Stance:** No. Perfectionism limits potential. The aim is to know when to aim for excellence and when good is enough.
 - **Reasoning:** Perfectionists mistakenly equate high standards with perfectionism. High achievers focus on excellence, learning, and progress; perfectionists obsess over zero defects and avoiding judgment. Because perfectionists cannot tolerate flaws, they spend excessive time polishing low-impact details, avoid unfamiliar domains where they might stumble, and miss opportunities for creative breakthrough. The antidote is becoming an imperfectionist who tolerates tolerable errors (S001, S018, S031).
-- **Quote:** "you avoid the discomfort of doubt, and you get the comfort of conviction." [S006, 2021].
-- **Sources and dates:** S001 (2023), S006 (2021), S018 (2024), S031 (2022).
+- **Quote:** "being an imperfectionist which is knowing when to aim for excellence and when to settle for good" [S001, 2023].
+- **Sources and dates:** S001 (2023), S018 (2024), S031 (2022).
 
 ## 5. Should you avoid disagreement to maintain team harmony?
 
@@ -41,15 +41,15 @@ Stances on specific questions the user might face regarding growth, stretch, ret
 
 - **Stance:** Avoid agreeable cheerleaders who offer empty praise; assemble a challenge network of disagreeable givers who give unvarnished truth.
 - **Reasoning:** Agreeable people are pleasant, but they often withhold critical truths to avoid awkwardness or preserve harmony. Agreeable takers are worse: they flatter to extract favors. Disagreeable givers may seem rough, blunt, and demanding on the surface, but they offer rigorous critique because they are genuinely invested in your excellence. They are the members you must recruit into your personal challenge network (S005, S007, S015).
-- **Quote:** "cohort of people he relies on to give him unvarnished feedback" [S005, 2019]. Also "disagreeable givers uh they're Gruff and tough on the surface uh but they're doing it because they want to help" [S007, 2024] and "the people you really want in your challenge network are the disagreeable givers" [S015, 2021].
+- **Quote:** "disagreeable givers uh they're Gruff and tough on the surface uh but they're doing it because they want to help" [S007, 2024] and "the people you really want in your challenge network are the disagreeable givers" [S015, 2021].
 - **Sources and dates:** S005 (2019), S007 (2024), S015 (2021).
 
 ## 7. What is the value of feeling like an imposter?
 
 - **Stance:** Feeling like an imposter is an asset when interpreted as a cue for confident humility, not an excuse to hide.
-- **Reasoning:** Imposter syndrome signals that your standards are high and that you are aware of the gap between your current knowledge and mastery. Instead of assuming you are a fraud, recognize that imposter thoughts protect you from complacency and arrogance. Beginners who feel like imposters often learn faster, prepare more thoroughly, and seek advice more readily than overconfident novices (S001, S002, S004).
-- **Quote:** "learn to give yourself a second score" [S004, 2024].
-- **Sources and dates:** S001 (2023), S002 (2026), S004 (2024).
+- **Reasoning:** Imposter syndrome signals that your standards are high and that you are aware of the gap between your current knowledge and mastery. Instead of assuming you are a fraud, recognize that imposter thoughts protect you from complacency and arrogance. Beginners who feel like imposters often learn faster, prepare more thoroughly, and seek advice more readily than overconfident novices (inferred from S007).
+- **Quote:** "when people talk about imposter syndrome that feeling is actually pretty rare what's much more common is imposter thoughts" [S007, 2024].
+- **Sources and dates:** S007 (2024).
 
 ## 8. Should you stick stubbornly to your plans or change your mind?
 
