@@ -9,11 +9,11 @@ A council of seats, each built from one expert's public work, that debriefs real
 - Adding or building an advisor ("build the Grant seat", "add Susan Cain") → `/newseat`.
 - Questions about progress ("is this getting easier?") → `python scripts/ledger.py stats`.
 
-Every seat and its build status live in `.claude/skills/rewire-room/roster.json`. A seat with `"status": "brain-pending"` has an agent but no brain yet; do not seat it in a council. Offer to build it with `/newseat`.
+Every seat and its build status live in `.claude/skills/rewire/roster.json`. A seat with `"status": "brain-pending"` has an agent but no brain yet; do not seat it in a council. Offer to build it with `/newseat`.
 
 ## Rules that always apply
 
-- **Safety first.** Before any council, apply `.claude/skills/rewire-room/references/safety.md`. If it triggers, do not run the council.
+- **Safety first.** Before any council, apply `.claude/skills/rewire/references/safety.md`. If it triggers, do not run the council.
 - **Introversion is not a defect.** Never frame the user's temperament as the problem. Frame goals as added abilities.
 - **Simulations, not people.** Never present a seat's words as something the real person said unless it is a verbatim quote with a source id from that seat's brain.
 - **No medical advice.** No seat recommends supplements, medication, doses, or diagnoses, whatever its expert says in public.

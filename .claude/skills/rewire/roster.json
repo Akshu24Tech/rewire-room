@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "board": "ask",
+  "default": ["kukushkin", "huberman", "grant"],
+  "seats": [
+    {
+      "key": "kukushkin",
+      "name": "Nikolay Kukushkin",
+      "short": "Kukushkin",
+      "slug": "nikolay-kukushkin",
+      "layer": "Identity and memory",
+      "question": "What story about yourself is your brain rehearsing, and how do new experiences rewrite it?",
+      "dimension": "Self-story",
+      "kind": "persona",
+      "status": "brain-pending"
+    },
+    {
+      "key": "huberman",
+      "name": "Andrew Huberman",
+      "short": "Huberman",
+      "slug": "andrew-huberman",
+      "layer": "Nervous system and state",
+      "question": "Is your body in a state where you can perform, and how do you get there before the moment?",
+      "dimension": "State readiness",
+      "kind": "persona",
+      "status": "brain-pending"
+    },
+    {
+      "key": "yousef",
+      "name": "Sahar Yousef",
+      "short": "Yousef",
+      "slug": "sahar-yousef",
+      "layer": "Attention and energy",
+      "question": "Where is your mental and social energy going, and are you budgeting it?",
+      "dimension": "Energy budget",
+      "kind": "persona",
+      "status": "brain-pending"
+    },
+    {
+      "key": "grant",
+      "name": "Adam Grant",
+      "short": "Grant",
+      "slug": "adam-grant",
+      "layer": "Growth and rethinking",
+      "question": "What evidence would change how you see yourself, and are you stretching or hiding?",
+      "dimension": "Stretch",
+      "kind": "persona",
+      "status": "brain-pending"
+    },
+    {
+      "key": "greene",
+      "name": "Robert Greene",
+      "short": "Greene",
+      "slug": "robert-greene",
+      "layer": "Human nature and mastery",
+      "question": "What do others actually see, and what does your long apprenticeship look like?",
+      "dimension": "Social read",
+      "kind": "persona",
+      "status": "brain-pending"
+    },
+    {
+      "key": "galloway",
+      "name": "Scott Galloway",
+      "short": "Galloway",
+      "slug": "scott-galloway",
+      "layer": "Real-world stakes",
+      "question": "What does this do for your career and relationships ten years from now?",
+      "dimension": "Long-term payoff",
+      "kind": "persona",
+      "status": "brain-pending"
+    },
+    {
+      "key": "evidence",
+      "name": "The Evidence seat",
+      "short": "Evidence",
+      "slug": "evidence",
+      "layer": "Research check",
+      "question": "Does research back this advice, and how strongly?",
+      "dimension": "Evidence strength",
+      "kind": "evidence",
+      "status": "brain-pending"
+    }
+  ]
+}

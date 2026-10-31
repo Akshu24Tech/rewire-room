@@ -90,7 +90,7 @@ You can also build a seat for someone not on the list, or for yourself from your
 
 | Path | What |
 |---|---|
-| `.claude/skills/rewire-room/` | The council: Chair protocol, round prompts, scoring, safety rules, roster, and one brain per seat |
+| `.claude/skills/rewire/` | The council: Chair protocol, round prompts, scoring, safety rules, roster, and one brain per seat |
 | `.claude/skills/newseat/` | The seat builder and the brain specs |
 | `.claude/agents/` | One sub-agent per seat (`seat-<key>.md`) |
 | `scripts/` | Quote checker, ledger, and source fetcher (Python standard library only) |

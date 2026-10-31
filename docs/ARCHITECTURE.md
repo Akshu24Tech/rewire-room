@@ -6,7 +6,7 @@ Rewire Room runs inside Claude Code. There is no server and no database. The cou
 
 ```
                 ┌────────────────────────────────────────────┐
-  user  ──────► │  Chair  (.claude/skills/rewire-room)       │
+  user  ──────► │  Chair  (.claude/skills/rewire)            │
                 │  safety screen → brief → rounds → debrief  │
                 └──────┬──────────────────────────┬──────────┘
                        │ spawns in parallel       │ writes
@@ -27,10 +27,10 @@ Rewire Room runs inside Claude Code. There is no server and no database. The cou
 
 | Component | Path | Role |
 |---|---|---|
-| Chair skill | `.claude/skills/rewire-room/SKILL.md` | Runs the protocol. Never argues a side. |
-| Roster | `.claude/skills/rewire-room/roster.json` | Every seat, its layer, question, and build status |
+| Chair skill | `.claude/skills/rewire/SKILL.md` | Runs the protocol. Never argues a side. |
+| Roster | `.claude/skills/rewire/roster.json` | Every seat, its layer, question, and build status |
 | Seat agents | `.claude/agents/seat-<key>.md` | One sub-agent per seat; reads only its own brain |
-| Brains | `.claude/skills/rewire-room/brains/<slug>/` | What a seat knows, compiled from public work |
+| Brains | `.claude/skills/rewire/brains/<slug>/` | What a seat knows, compiled from public work |
 | Seat builder | `.claude/skills/newseat/` | Finds sources, extracts, writes and verifies a brain |
 | Quote checker | `scripts/check_quotes.py` | Session quotes against brains; brain quotes against raw sources |
 | Ledger | `scripts/ledger.py`, `ledger/reps.jsonl` | Reps, discomfort before and after, trends |
