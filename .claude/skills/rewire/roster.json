@@ -34,7 +34,7 @@
       "question": "Where is your mental and social energy going, and are you budgeting it?",
       "dimension": "Energy budget",
       "kind": "persona",
-      "status": "brain-pending"
+      "status": "ready"
     },
     {
       "key": "grant",
@@ -56,7 +56,7 @@
       "question": "What do others actually see, and what does your long apprenticeship look like?",
       "dimension": "Social read",
       "kind": "persona",
-      "status": "brain-pending"
+      "status": "ready"
     },
     {
       "key": "galloway",
@@ -67,7 +67,7 @@
       "question": "What does this do for your career and relationships ten years from now?",
       "dimension": "Long-term payoff",
       "kind": "persona",
-      "status": "brain-pending"
+      "status": "ready"
     },
     {
       "key": "evidence",
