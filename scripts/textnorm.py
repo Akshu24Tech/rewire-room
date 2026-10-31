@@ -5,8 +5,10 @@ from __future__ import annotations
 import re
 import unicodedata
 
-# A verbatim quote with a source id: "exact words" [S014] or “exact words” [E012]
-QUOTE_RE = re.compile(r'["“]([^"“”\n]{6,}?)["”]\s*\[([SE]\d{3,4})\]')
+# A verbatim quote with a source id: "exact words" [S014], "exact words" [S014, 2024],
+# or “exact words” [E012]. Anything after the comma is ignored, so an odd year format
+# cannot make the checker silently skip a quote.
+QUOTE_RE = re.compile(r'["“]([^"“”\n]{6,}?)["”]\s*\[([SE]\d{3,4})(?:,[^\]\n]*)?\]')
 
 _PUNCT_MAP = {
     "‘": "'", "’": "'", "“": '"', "”": '"',

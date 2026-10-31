@@ -163,7 +163,7 @@ def fetch_youtube(url: str) -> tuple[str, str, str]:
         title = meta[0] if meta else url
         raw_date = meta[1] if len(meta) > 1 else ""
         subprocess.run(
-            ["yt-dlp", "--skip-download", "--write-subs", "--write-auto-subs", "--sub-langs", "en.*,en",
+            ["yt-dlp", "--skip-download", "--write-subs", "--write-auto-subs", "--sub-langs", "en,en-orig,en-US,en-GB",
              "--sub-format", "vtt", "-o", f"{tmp}/cap.%(ext)s", url],
             capture_output=True, text=True, timeout=180, check=True,
         )

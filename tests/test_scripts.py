@@ -28,6 +28,10 @@ class TextNormTests(unittest.TestCase):
         text = 'He said "practice beats insight" [S012] and “slow is smooth” [E004].'
         self.assertEqual(find_quotes(text), [("practice beats insight", "S012"), ("slow is smooth", "E004")])
 
+    def test_find_quotes_reads_brain_format_with_year(self):
+        text = '"practice beats insight" [S012, 2024] and "slow is smooth" [S003, date unknown]'
+        self.assertEqual(find_quotes(text), [("practice beats insight", "S012"), ("slow is smooth", "S003")])
+
     def test_find_quotes_skips_quotes_without_ids(self):
         self.assertEqual(find_quotes('a "plain quote here" with no id'), [])
 
