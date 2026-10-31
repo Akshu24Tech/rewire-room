@@ -78,7 +78,7 @@
       "question": "Does research back this advice, and how strongly?",
       "dimension": "Evidence strength",
       "kind": "evidence",
-      "status": "brain-pending"
+      "status": "ready"
     }
   ]
 }
