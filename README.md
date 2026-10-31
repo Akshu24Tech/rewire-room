@@ -8,7 +8,7 @@ Insight does not rewire a brain. Repetition does. Rewire Room is a council of ad
 
 Built for introverts who want more range, not a new personality. Introversion is not the problem being fixed. The goal is to add abilities (speaking up, starting conversations, holding a room) while keeping your temperament.
 
-> **Status: Phase 1 in progress.** The council protocol, seat agents, verification scripts, and brain builder are in place. Seat brains are built with `/newseat` on a machine with web access (see [Build a seat](#build-a-seat)). See [docs/ROADMAP.md](docs/ROADMAP.md).
+> **Status: Phases 1 and 2 done.** Four seats are built and quote-verified (Kukushkin, Huberman, Grant, Evidence), the `debrief`, `ask`, `prep`, `reps`, and `check-in` modes all work, and there is a full worked example in [`sessions/examples/`](sessions/examples/). The last three seats (Yousef, Greene, Galloway) are built with `/newseat` on a machine with web access (see [Build a seat](#build-a-seat)). See [docs/ROADMAP.md](docs/ROADMAP.md).
 
 ## The council
 

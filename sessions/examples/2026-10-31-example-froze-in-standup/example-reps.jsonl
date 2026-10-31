@@ -1,0 +1,2 @@
+{"event": "add", "id": "R001", "date": "2026-10-31", "type": "work-meeting", "situation": "Froze when lead asked for ideas in standup", "layer": "Nervous system and state", "rep": "Breathe out, then say \"Rough idea:\" within ten seconds", "before": 8, "session": "sessions/examples/2026-10-31-example-froze-in-standup"}
+{"event": "done", "id": "R001", "date": "2026-10-31", "note": "Said it on the second question. Voice shook, lead nodded. Graded myself on speaking, not landing.", "after": 6}
