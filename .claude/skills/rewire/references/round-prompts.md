@@ -157,7 +157,7 @@ Answer in your seat's voice, under 300 words, in exactly this shape:
 
 SEAT: [SHORT] ([layer])
 LADDER for [type]:
-1. [rep] — why it is the right first stretch (framework, source id)
+1. [rep] (why it is the right first stretch, with framework and source id)
 2. [rep]
 3. [rep]
 4. [rep]

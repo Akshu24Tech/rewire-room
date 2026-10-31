@@ -17,9 +17,12 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Run tests
         run: python -m unittest discover -s tests -v
-      - name: Check committed brains against their quote rules
+      - name: Check brain prose for em dashes (sources.md is verbatim data, skip it)
         run: |
           for brain in .claude/skills/rewire/brains/*/; do
             [ -f "$brain/_hot.md" ] || continue
-            if grep -n "—" "$brain"*.md; then echo "Em dash in $brain"; exit 1; fi
+            for f in "$brain"*.md; do
+              [ "$(basename "$f")" = "sources.md" ] && continue
+              if grep -n "—" "$f"; then echo "Em dash in $f"; exit 1; fi
+            done
           done
